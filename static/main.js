@@ -22,17 +22,30 @@ let stackBalls = () => {
     let box = document.getElementById("box");
     for (let i = 0; i < noOfRows; i++) {
       let row = document.createElement("div");
-      let stdWidth;
-      if (i % 2 != 0) {
-        if (noOfBalls < 7) {
-          row.style.paddingLeft = (noOfBalls * 1.8) + "%";
-        } else {
-          row.style.paddingLeft = "1.8%"
+      if (noOfRows % 2 == 0) {
+        console.log((i + 1) % 2)
+        if ((i + 1) % 2 == 0) {
+          if (noOfBalls < 7) {
+            row.style.paddingLeft = (noOfBalls * 1.8) + "%";
+          } else {
+            row.style.paddingLeft = "2.8%"
+          }
+          row.style.display = "flex";
+          row.style.flexDirection = "row-reverse"
         }
-        row.style.display = "flex";
-        row.style.flexDirection = "row-reverse"
       }
-      row.style.width = "100%";
+      else {
+        if ((i + 1) % 2 != 0) {
+          if (noOfBalls < 7) {
+            row.style.paddingLeft = (noOfBalls * 1.8) + "%";
+          } else {
+            row.style.paddingLeft = "2.8%"
+          }
+          row.style.display = "flex";
+          row.style.flexDirection = "row-reverse"
+        }
+      }
+      row.style.width = "600px";
       row.style.overflow = "hidden"
       for (let j = 0; j < noOfBalls; j++) {
         let ball = document.createElement("div");
