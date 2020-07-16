@@ -5,6 +5,7 @@
   display: table-cell;
   vertical-align: bottom;
   overflow: scroll;
+  line-height: 0px;
 }
 
 .row {

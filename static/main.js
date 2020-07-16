@@ -25,7 +25,7 @@ let stackBalls = () => {
       let stdWidth;
       if (i % 2 != 0) {
         if (noOfBalls < 7) {
-          row.style.paddingLeft = "2.8%";
+          row.style.paddingLeft = (noOfBalls * 1.8) + "%";
         } else {
           row.style.paddingLeft = "1.8%"
         }
