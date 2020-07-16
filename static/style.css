@@ -4,7 +4,7 @@
   border: 2px solid #74b9ff;
   display: table-cell;
   vertical-align: bottom;
-  overflow: scroll;
+  overflow: hidden;
   line-height: 0px;
 }
 
