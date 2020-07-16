@@ -25,22 +25,18 @@ let stackBalls = () => {
 
       if (noOfRows % 2 == 0) {
         if ((i + 1) % 2 == 0) {
-          if (noOfBalls < 7) {
-            row.style.paddingLeft = (noOfBalls * 1.8) + "%";
-          } else {
-            row.style.paddingLeft = "2.8%"
-          }
+          let a = 600 / noOfBalls;
+          console.log(a - ((93 / 100) * a));
+          row.style.paddingLeft = a - ((93 / 100) * a) + "%";
           row.style.display = "flex";
           row.style.flexDirection = "row-reverse"
         }
       }
       else {
         if ((i + 1) % 2 != 0) {
-          if (noOfBalls < 7) {
-            row.style.paddingLeft = (noOfBalls * 1.8) + "%";
-          } else {
-            row.style.paddingLeft = "2.8%"
-          }
+          let a = 600 / noOfBalls;
+          console.log(a - ((93 / 100) * a));
+          row.style.paddingLeft = a - ((93 / 100) * a) + "%";
           row.style.display = "flex";
           row.style.flexDirection = "row-reverse"
         }
